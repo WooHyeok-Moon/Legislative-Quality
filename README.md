@@ -14,16 +14,16 @@ and conducting hypothesis testing.
 
 ## Repository Structure
 
-### 📁 Data Processing/
+### Data Processing/
 
 This folder contains all scripts and resources used to extract quantitative indicators
 from legislative bills.
 
-#### 🔹 Raw Data
+#### Raw Data
 - `bill_pdfs/`  
   Contains 2,785 legislative bill documents collected from the official website.
 
-#### 🔹 Feature Extraction Scripts
+#### Feature Extraction Scripts
 Each script extracts one quantitative feature from the legislative texts:
 
 - `fetch_bill_avg_sentence_length.py`  
@@ -56,14 +56,14 @@ Each script extracts one quantitative feature from the legislative texts:
 - `fetch_bill_vocab_level.py`  
   Calculates vocabulary level using a predefined lexical standard.
 
-#### 🔹 Silver Standard Construction
+#### Silver Standard Construction
 - `fetch_silver_standard.py`  
   Generates the silver-standard legislative quality label using LLM-based evaluation.
 
 - `silver_standard_results.csv`  
   Output file containing generated silver-standard labels.
 
-#### 🔹 Dictionaries / External Resources
+#### Dictionaries / External Resources
 - `foreign_examples.csv`  
   Dictionary used to detect foreign terms.
 
@@ -72,7 +72,7 @@ Each script extracts one quantitative feature from the legislative texts:
 
 ---
 
-### 📊 Analysis
+### Analysis
 
 - `Experiment.ipynb`  
   This notebook performs the statistical analyses and hypothesis testing
